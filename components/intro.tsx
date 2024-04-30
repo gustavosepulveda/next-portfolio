@@ -46,7 +46,7 @@ export default function Intro() {
             </motion.span>
         </div>
       </div>
-      <p>
+      <p className='mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5]'>
       <span className="font-bold">Hello, I'm Gustavo.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
         <span className="font-bold">2 years</span> of experience. I enjoy
