@@ -8,7 +8,7 @@ export default function Projects() {
 
 
 	return (
-		<section>
+		<section id= "projects" className="scroll-mt-28">
 			<SectionHeading>My projects</SectionHeading>
 			<div>
 				{projectsData.map((project, index) => (
