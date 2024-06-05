@@ -1,9 +1,10 @@
+// this file is used to create a context for the active section of the app.
+
+
 "use client";
 
 import React, { useState, createContext, useContext } from "react";
-import { links } from "@/lib/data";
-
-type SectionName = keyof typeof links;
+import { SectionName } from "@/lib/types"	
 
 type ActiveSectionContextProviderProps = {
 	children: React.ReactNode;
