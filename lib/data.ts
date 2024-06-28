@@ -38,23 +38,23 @@ export const experiencesData = [
     title: "Graduated bootcamp",
     location: "Houston, Texas",
     description:
-      "I graduated after 6 months of studying. I found a job as Dell Boomi developer",
+      "I graduated after 6 months of studying. I found a job as Dell Boomi developer.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Boomi Developer",
+    location: "Houston, TX",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I am currently working as a Boomi Developer. ",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023 - present",
   },
   {
     title: "Full-Stack Developer",
     location: "Houston, TX",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I also freelance as a Full-Stack Developer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaReact),
     date: "2022 - present",
   },
