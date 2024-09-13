@@ -38,15 +38,15 @@ export const experiencesData = [
     title: "Graduated bootcamp",
     location: "Houston, Texas",
     description:
-      "I graduated after 6 months of studying. I found a job as Dell Boomi developer.",
+      "I graduated after 6 months of studying. I found a job as IT Buisness Analyst.",
     icon: React.createElement(LuGraduationCap),
     date: "2022",
   },
   {
-    title: "Boomi Developer",
+    title: "IT business analyst",
     location: "Houston, TX",
     description:
-      "I am currently working as a Boomi Developer. ",
+      "I am currently working as a IT business analyst. ",
     icon: React.createElement(CgWorkAlt),
     date: "2023 - present",
   },
