@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gustavo Sepulveda — Portfolio
 
-## Getting Started
+A personal portfolio website built with the Next.js App Router. It's a single-page
+site with animated sections for an intro, about, projects, skills, experience, and a
+working contact form.
 
-First, run the development server:
+## Tech stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js 14** (App Router + Server Actions)
+- **TypeScript**
+- **Tailwind CSS** (with class-based dark mode)
+- **Framer Motion** for animations
+- **React Intersection Observer** for scroll-based active-section tracking
+- **Resend** for sending contact-form emails
+- **react-hot-toast** for form feedback
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Responsive layout with a fixed, animated navigation bar
+- Scroll spy that highlights the active section
+- Light/dark theme toggle (persisted to `localStorage`, respects system preference)
+- Contact form powered by a Server Action + Resend, with success/error toasts
+- Project cards with optional live-demo and source-code links
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Getting started
 
-## Learn More
+1. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Create a `.env.local` file (see `.env.example`) and add your Resend API key:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   RESEND_API_KEY=your_key_here
+   ```
 
-## Deploy on Vercel
+3. Run the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Making it your own
+
+- **Content** lives in [`lib/data.ts`](lib/data.ts) — edit the experience, projects,
+  and skills arrays.
+- **Project links:** set `liveUrl` and `repoUrl` on each project in `lib/data.ts`
+  to show "Live demo" / "Code" buttons on the cards (leave them as `""` to hide).
+- **Images** (profile picture, project screenshots) live in [`public/`](public).
+- **Resume:** replace [`public/CV.pdf`](public/CV.pdf) with your own.
+
+## Deploy
+
+The easiest way to deploy is [Vercel](https://vercel.com/new). Remember to add the
+`RESEND_API_KEY` environment variable in your project settings.
